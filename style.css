@@ -1,0 +1,149 @@
+:root {
+    font-size: 62.5%;
+  }
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #202020;
+    color: #ddd;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.left_container, .right_container {
+    width: 40%;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left_container {
+    align-items: flex-end;
+
+    display: flex;
+
+}
+
+.title, .link__container, .button__generate {
+    width: 40rem;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 6px 5px;
+}
+
+.title h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ddd;
+}
+
+.link__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input {
+    width: 35rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ddd;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    color: black;
+}
+
+.button__generate {
+    width: 15rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(81, 155, 195);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 150ms;
+}
+.button__generate:hover {
+    opacity: .9;
+}
+
+.right_container {
+    align-items: flex-start;
+}
+
+.qr_container {
+    background-color: #3a3939;
+    padding: 3rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    height: 28rem;
+}
+
+.qr_container__image {
+    margin-top: 2rem;
+}
+
+.download__container {
+    margin: 2rem 0 1rem;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr__button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #000;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 150ms;
+}
+
+.qr__button:hover {
+    opacity: .9;
+}
+
+.rotate-animation {
+    animation: rotate-ar 700ms infinite linear;
+}
+
+@keyframes rotate-ar{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}

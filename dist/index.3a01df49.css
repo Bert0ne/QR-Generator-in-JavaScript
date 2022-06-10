@@ -1,0 +1,153 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  color: #ddd;
+  background-color: #202020;
+  flex-direction: row;
+  place-content: center space-evenly;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  display: flex;
+}
+
+.left_container, .right_container {
+  width: 40%;
+  height: 95vh;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.left_container {
+  align-items: flex-end;
+  display: flex;
+}
+
+.title, .link__container, .button__generate {
+  width: 40rem;
+}
+
+.title {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.title h1 {
+  margin: 6px 5px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.title h2 {
+  color: #ddd;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.link__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  display: flex;
+}
+
+input {
+  width: 35rem;
+  text-align: center;
+  color: #000;
+  background-color: #ddd;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  margin: 1rem 1rem 2rem;
+  padding: 1.5rem 1rem;
+}
+
+.button__generate {
+  width: 15rem;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  background-color: #519bc3;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  margin: 1rem 1rem 2rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: opacity .15s;
+}
+
+.button__generate:hover {
+  opacity: .9;
+}
+
+.right_container {
+  align-items: flex-start;
+}
+
+.qr_container {
+  justify-content: center;
+  align-items: space-evenly;
+  height: 28rem;
+  background-color: #3a3939;
+  border-radius: 15px;
+  flex-direction: column;
+  padding: 3rem;
+  display: flex;
+}
+
+.qr_container__image {
+  margin-top: 2rem;
+}
+
+.download__container {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 1rem;
+  display: flex;
+}
+
+.qr__button {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  margin: 1rem 0;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: opacity .15s;
+}
+
+.qr__button:hover {
+  opacity: .9;
+}
+
+.rotate-animation {
+  animation: rotate-ar .7s linear infinite;
+}
+
+@keyframes rotate-ar {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
