@@ -519,25 +519,27 @@ generateBtn.addEventListener("click", ()=>{
 function generateQR(url) {
     const qr = new (0, _qriousDefault.default)({
         value: url,
-        size: 200
+        size: 200,
+        level: "H"
     });
     const image = qr.toDataURL();
     qrImageSrc.src = image;
     downloadBtn.innerHTML = `
-         <a href="${image}" class="qr__button" download="qrd.png">Download <i class="fa-solid fa-download"></i></a>
+         <a href="${image}" class="qr__button" download="QR.png">Download <i class="fa-solid fa-download"></i></a>
   `;
-// const qr = new QRious({
-//     element: document.getElementById("app"),
-//     value: 's'
-//   });
-// qr.background = 'green';
-// qr.backgroundAlpha = 0.8;
-// qr.foreground = 'blue';
-// qr.foregroundAlpha = 0.8;
-// qr.level = 'H';
-// qr.padding = 25;
-// qr.size = 500;
-// qr.value = 'https://github.com/neocotic/qrious';
+    // const qr = new QRious({
+    //     element: document.getElementById("app"),
+    //     value: 's'
+    //   });
+    // qr.background = 'green';
+    // qr.backgroundAlpha = 0.8;
+    // qr.foreground = 'blue';
+    // qr.foregroundAlpha = 0.8;
+    // qr.level = 'H';
+    // qr.padding = 25;
+    // qr.size = 500;
+    // qr.value = 'https://github.com/neocotic/qrious';
+    rotateAnimation.classList.remove("rotate-animation");
 }
 // const qr = new QRious({
 //     value: "https://www.sisense.com/"

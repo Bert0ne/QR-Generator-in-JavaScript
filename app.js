@@ -16,14 +16,15 @@ function generateQR(url) {
 
   const qr = new QRious({
     value: url,
-    size: 200
+    size: 200,
+    level: 'H'
   });
   
   const image = qr.toDataURL();
   
   qrImageSrc.src = image
   downloadBtn.innerHTML = `
-         <a href="${image}" class="qr__button" download="qrd.png">Download <i class="fa-solid fa-download"></i></a>
+         <a href="${image}" class="qr__button" download="QR.png">Download <i class="fa-solid fa-download"></i></a>
   `
 
  
@@ -40,7 +41,8 @@ function generateQR(url) {
     // qr.padding = 25;
     // qr.size = 500;
     // qr.value = 'https://github.com/neocotic/qrious';
-    
+    rotateAnimation.classList.remove('rotate-animation')
+
 }
 
 
